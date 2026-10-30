@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herMove | Create Your Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body data-page="register">
+    <header class="site-header">
+        <a class="brand" href="index.html">herMove <span>🏃‍♀️</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="activities.html">Activities</a>
+            <a href="find-buddy.html">Find Buddy</a>
+            <a class="active" href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="page-wrap narrow-wrap">
+        <section class="page-intro centered">
+            <p class="eyebrow">YOUR HERMOVE PROFILE</p>
+            <h1>Create your profile</h1>
+            <p>Tell the community a little about yourself and the sports you enjoy.</p>
+        </section>
+
+        <form id="profileForm" class="form-panel">
+            <div class="form-grid">
+                <label>Full name *
+                    <input id="fullName" name="fullName" type="text" placeholder="e.g. Tawanda M." required minlength="2">
+                </label>
+                <label>Email address *
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                </label>
+                <label>Password *
+                    <input id="password" name="password" type="password" placeholder="At least 8 characters" required minlength="8">
+                    <small>Prototype only: do not use a real password.</small>
+                </label>
+                <label>Location *
+                    <input id="location" name="location" type="text" placeholder="e.g. Eindhoven" required>
+                </label>
+                <label>Sports you enjoy *
+                    <input id="sports" name="sports" type="text" placeholder="e.g. running, yoga, tennis" required>
+                </label>
+                <label>Skill level *
+                    <select id="skillLevel" name="skillLevel" required>
+                        <option value="">Choose your level</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </label>
+                <label>Availability *
+                    <input id="availability" name="availability" type="text" placeholder="e.g. Friday evenings" required>
+                </label>
+                <label class="full-width">Short bio
+                    <textarea id="bio" name="bio" rows="3" placeholder="Tell other sporters a little about you (optional)"></textarea>
+                </label>
+            </div>
+            <p id="profileMessage" class="feedback" aria-live="polite"></p>
+            <div class="form-actions">
+                <button class="button button-yellow" type="submit">Create Profile</button>
+                <a class="button button-outline" href="index.html">Cancel</a>
+            </div>
+        </form>
+    </main>
+    <footer class="site-footer">herMove © 2026 <span>Move Together, Feel Stronger</span></footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herMove | Create Activity</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body data-page="create-activity">
+    <header class="site-header">
+        <a class="brand" href="index.html">herMove <span>🏃‍♀️</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="activities.html">Activities</a>
+            <a href="find-buddy.html">Find Buddy</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="page-wrap narrow-wrap">
+        <section class="page-intro centered">
+            <p class="eyebrow">START SOMETHING TOGETHER</p>
+            <h1>Create an activity</h1>
+            <p>Plan a simple sports session and invite other herMove members.</p>
+        </section>
+
+        <form id="createActivityForm" class="form-panel">
+            <div class="form-grid">
+                <label>Activity name *
+                    <input id="activityName" required placeholder="e.g. Saturday Morning Run">
+                </label>
+                <label>Sport *
+                    <input id="activitySport" required placeholder="e.g. Running">
+                </label>
+                <label>Location *
+                    <input id="activityLocation" required placeholder="e.g. Eindhoven Park">
+                </label>
+                <label>Date *
+                    <input id="activityDate" type="date" required>
+                </label>
+                <label>Start time *
+                    <input id="activityTime" type="time" required>
+                </label>
+                <label>Maximum participants *
+                    <input id="activityMax" type="number" min="2" max="50" value="5" required>
+                </label>
+                <label class="full-width">About this activity *
+                    <textarea id="activityDescription" rows="4" required placeholder="Describe the activity and who it is suitable for."></textarea>
+                </label>
+            </div>
+            <p id="createActivityMessage" class="feedback" aria-live="polite"></p>
+            <div class="form-actions">
+                <button class="button button-yellow" type="submit">Create Activity</button>
+                <a class="button button-outline" href="activities.html">Cancel</a>
+            </div>
+        </form>
+    </main>
+    <footer class="site-footer">herMove © 2026 <span>Move Together, Feel Stronger</span></footer>
+</body>
+</html>

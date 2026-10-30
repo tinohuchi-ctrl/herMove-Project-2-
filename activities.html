@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herMove | Activities</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body data-page="activities">
+    <header class="site-header">
+        <a class="brand" href="index.html">herMove <span>🏃‍♀️</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="activities.html">Activities</a>
+            <a href="find-buddy.html">Find Buddy</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="page-wrap">
+        <section class="page-intro">
+            <p class="eyebrow">GET ACTIVE TOGETHER</p>
+            <h1>Activities</h1>
+            <p>Find a sports activity that fits your interests and schedule.</p>
+        </section>
+
+        <div class="list-toolbar">
+            <div>
+                <h2>Available activities</h2>
+                <p class="muted">Open an activity to see details and join.</p>
+            </div>
+            <a class="button button-pink" href="create-activity.html">+ Create Activity</a>
+        </div>
+
+        <div id="activitiesList" class="card-grid"></div>
+        <p id="activitiesEmpty" class="empty-state hidden">No activities match your search yet. Create one to get started.</p>
+    </main>
+    <footer class="site-footer">herMove © 2026 <span>Move Together, Feel Stronger</span></footer>
+</body>
+</html>

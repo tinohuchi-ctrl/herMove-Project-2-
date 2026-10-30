@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herMove | Find Your Buddy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body data-page="find-buddy">
+    <header class="site-header">
+        <a class="brand" href="index.html">herMove <span>🏃‍♀️</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="activities.html">Activities</a>
+            <a class="active" href="find-buddy.html">Find Buddy</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="page-wrap">
+        <section class="page-intro centered">
+            <p class="eyebrow">MEET YOUR MATCH</p>
+            <h1>Find your buddy</h1>
+            <p>Search for female sporters with similar interests and schedules.</p>
+        </section>
+
+        <form id="buddySearchForm" class="search-panel">
+            <label>Sport
+                <input id="searchSport" type="text" placeholder="e.g. yoga">
+            </label>
+            <label>Skill level
+                <select id="searchSkill">
+                    <option value="">Any level</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+            </label>
+            <label>Location
+                <input id="searchLocation" type="text" placeholder="e.g. Eindhoven">
+            </label>
+            <label>Availability
+                <input id="searchAvailability" type="text" placeholder="e.g. Friday">
+            </label>
+            <div class="search-actions">
+                <button class="button button-yellow" type="submit">Search</button>
+                <button class="button button-outline" id="clearBuddySearch" type="button">Clear</button>
+            </div>
+        </form>
+
+        <div class="list-heading">
+            <h2>Sporters you might connect with</h2>
+            <p id="buddyResultCount" class="muted"></p>
+        </div>
+        <div id="buddyResults" class="card-grid"></div>
+        <p class="prototype-note">Sample profiles are used for this prototype. Connection requests are not included in the current must-have scope.</p>
+    </main>
+    <footer class="site-footer">herMove © 2026 <span>Move Together, Feel Stronger</span></footer>
+</body>
+</html>
